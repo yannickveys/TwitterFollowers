@@ -1,0 +1,29 @@
+{
+  "name": "Twitter Followers Counter",
+  "version": "0.0.0.4",
+  "description": "Displays Twitter followers count on any account's followers tab. (Bèta)",
+  "author": "Yannick Veys",
+  "icons": {"48": "48.png", 
+  			"128": "128.png"} ,
+  "homepage_url": "https://twitter.com/yannick_veys",
+  "permissions": [
+    "*://twitter.com/*", "*://www.twitter.com/*"
+  ],
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/inject_content.js"
+      ],
+      "matches": ["*://twitter.com/*", "*://www.twitter.com/*"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "src/content.js"
+  ]
+}
