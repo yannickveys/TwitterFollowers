@@ -1,6 +1,6 @@
 # TwitterFollowers
 
-This Chrome Extension will allow you to see how many followers YOUR followers have on the follow tab. twitter.com/[username]/followers
+This Chrome Extension will allow you to see how many Twitter followers YOUR followers have on the follow tab. twitter.com/[username]/followers
 
 You can see an example of how it works here: https://twitter.com/Yannick_Veys/status/1262084066775531522?s=20
 
